@@ -7,7 +7,6 @@ export default function Navbar() {
     
 
   return (
-    <>
     <div className="sticky md:top-10 md:top-0">
       <header>
         <div className="flex top-0 z-50 justify-center items-center gap-24 md:mt-5  max-w-screen-lg mx-auto text-primary-brown bg-secondary-brown md:w-96 py-5 rounded-xl opacity-90 w-full mt-0">
@@ -17,7 +16,6 @@ export default function Navbar() {
         </div>
       </header>
     </div>
-    </>
   );
 }
  

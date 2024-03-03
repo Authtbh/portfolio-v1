@@ -1,3 +1,5 @@
+import { Space_Grotesk, Space_Mono } from "next/font/google";
+import { space } from "postcss/lib/list";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -13,6 +15,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'primary-brown': '#eed1c7',
+        'secondary-brown': '#1e1818',
+      },
+      fontSize: {
+        clamp: 'clamp(1rem, 6rem, 5rem)',
+      },
+
+      
     },
   },
   plugins: [],

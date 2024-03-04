@@ -10,9 +10,9 @@ import { CardBody, CardContainer, CardItem } from "@/components/ThreeD";
 const Profile = () => {
   return (
     <div>
-      <div className="profile">
-        <div className="text-clamp ml-5 md:ml-24 mt-20 text-primary-brown"><h1>Auth</h1></div>
-        <div className="w-10/12 md:w-5/12 ml-5 md:ml-24 text-primary-brown"><h4>Hey! im a 9th grader livin in india i do coding cus it gives me mental peace and i really wanna land internship before college im scared of rotting in college</h4></div>
+      <div className="">
+        <div className="meow text-clamp ml-5 md:ml-24 mt-20 text-primary-brown"><h1>Auth</h1></div>
+        <div className="spacee w-10/12 md:w-5/12 ml-5 md:ml-24 text-primary-brown"><h4>Hey! im a 9th grader livin in india i do coding cus it gives me mental peace and i really wanna land internship before college im scared of rotting in college</h4></div>
       </div>
 
     

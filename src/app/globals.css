@@ -41,8 +41,17 @@ body {
   src: url(../fonts/SpaceGrotesk-Light.ttf);
 }
 
-.profile{
+@font-face {
+  font-family: Spacee;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+.spacee{
   font-family: Space;
+}
+
+.meow{
+  font-family: Spacee;
 }
 
 #my-tooltip {

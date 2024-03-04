@@ -18,10 +18,14 @@ const config: Config = {
       colors: {
         'primary-brown': '#eed1c7',
         'secondary-brown': '#1e1818',
+        'idktbh': '#252222',
       },
       fontSize: {
         clamp: 'clamp(1rem, 6rem, 5rem)',
       },
+      spacing: {
+        '128': '18rem',
+      }
 
       
     },

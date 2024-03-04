@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Profile from '@/components/Profile';
 import Navbar from '@/components/Navbar';
 import 'react-tooltip/dist/react-tooltip.css'
-import { Photo } from '@/components/Photo';
 
 
 export default function Home() {

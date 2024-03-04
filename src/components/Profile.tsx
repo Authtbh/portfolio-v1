@@ -9,11 +9,11 @@ import { CardBody, CardContainer, CardItem } from "@/components/ThreeD";
 
 const Profile = () => {
   return (
-    <div>
-      <div className="">
-        <div className="meow text-clamp ml-5 md:ml-24 mt-20 text-primary-brown"><h1>Auth</h1></div>
+    <>
+      
+        <div className="meow text-clamp ml-5 md:ml-24 mt-20 w-80 text-primary-brown"><h1 className="w-80">Auth</h1></div>
         <div className="spacee w-10/12 md:w-5/12 ml-5 md:ml-24 text-primary-brown"><h4>Hey! im a 9th grader livin in india i do coding cus it gives me mental peace and i really wanna land internship before college im scared of rotting in college</h4></div>
-      </div>
+      
 
     
 
@@ -24,10 +24,14 @@ const Profile = () => {
         <div className="hover:bg-idktbh rounded-xl transition-all"><a data-tooltip-id="my-tooltip" data-tooltip-content="AuthFr@proton.me" data-tooltip-place="top" className="transition-all flex justify-center items-center w-[50px] h-[50px] bg-transparent border-none rounded-[10px] cursor-pointer group-hover:bg-elevation_one active:scale-[95%] offset_ring" target="_blank" rel="noreferrer" href="mailto:AuthFr@proton.me"><svg width="24px" height="24px" className="social_svg" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#dba895"><path d="M7 9l5 3.5L17 9" stroke="#dba895" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z" stroke="#dba895" stroke-width="1.5"></path></svg></a></div>
         <div className="hover:bg-idktbh rounded-xl transition-all"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top" className="transition-all flex justify-center items-center w-[50px] h-[50px] bg-transparent border-none rounded-[10px] cursor-pointer group-hover:bg-elevation_one active:scale-[95%] offset_ring" target="_blank" rel="noreferrer" href="https://www.buymeacoffee.com/authtbh"><svg width="24px" height="24px" className="social_svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#dba895"><path d="M17 11.6V15a6 6 0 01-6 6H9a6 6 0 01-6-6v-3.4a.6.6 0 01.6-.6h12.8a.6.6 0 01.6.6zM12 9c0-1 .714-2 2.143-2v0A2.857 2.857 0 0017 4.143V3.5M8 9v-.5a3 3 0 013-3v0a2 2 0 002-2V3" stroke="#dba895" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 11h2.5a2.5 2.5 0 010 5H17" stroke="#dba895" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div>
       </div>
-     <div className="huh relative bottom-0 -mt-64 left-96 mr-96 md:opacity-100 opacity-0"><CardContainer className="inter-var">
+      <a  href="#">
+            <button id="btn" className="md:ml-20 ml-5 mt-5 hover:bg-idkfr active:scale-95 transition-all   border-spacing-4 bg-idktbh border-primary-brown  text-primary-brown w-56 h-10 rounded-xl">Discover my work ↓</button>       
+    </a>
+      
+     <div className="huh relative bottom-0 -mt-64 -right-96 md:block hidden md:left-96 mr-96 md:opacity-100 opacity-100 "><CardContainer className="inter-var">
       <CardBody className="flex -mr-96">
       
-        <CardItem translateZ="100" className="relative top-0 right-0 ">
+        <CardItem translateZ="100" className="relative  top-0 right-0 ">
           <Image
             src="https://i.pinimg.com/564x/dc/90/6f/dc906f75008acf3d758b38c8612935e1.jpg"
             height="1000"
@@ -38,8 +42,26 @@ const Profile = () => {
         </CardItem>
       </CardBody>
     </CardContainer></div>
-      <Tooltip id="my-tooltip"  />
-   </div>
+   
+
+
+   
+    <h2 className="brr md:ml-10 ml-4 mt-5 text-primary-brown">Activity</h2>
+    <img src="https://i.pinimg.com/474x/0c/22/d4/0c22d497d749a184ac9b88e6fc298384.jpg" alt="pfp" className="md:size-44 size-24 md:ml-6 ml-4 rounded-xl mt-5 " />
+    <div className=" text-primary-brown w-44 md:ml-56 md:-mt-40 -mt-24 ml-40  ">
+     <h4 className="br">@authtbh</h4>
+     <h5 className="brr">idle</h5>
+     <h6 className="brr">123</h6>
+    </div>
+
+    <h1 className="br font-semibold text-xl text-primary-brown ml-5  w-44 mt-16 ">Bio:</h1>
+    <div className="w-96 md:absolute right-0 md:-mt-48 mr-16 text-primary-brown mt-12 ml-3  ">
+    <h5 className="">Hey there, I’m Lalit! :] I’m a <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bg-idkfr rounded-md font-medium">2022.</span> Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
+</div>
+
+<Tooltip id="my-tooltip"  />
+    
+   </>
 
 
   )

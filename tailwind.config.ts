@@ -19,6 +19,7 @@ const config: Config = {
         'primary-brown': '#eed1c7',
         'secondary-brown': '#1e1818',
         'idktbh': '#252222',
+        'idkfr': '#2a2727',
       },
       fontSize: {
         clamp: 'clamp(1rem, 6rem, 5rem)',

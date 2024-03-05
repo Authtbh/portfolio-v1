@@ -11,8 +11,9 @@ const Profile = () => {
   return (
     <>
       
-        <div className="meow text-clamp ml-5 md:ml-24 mt-20 w-80 text-primary-brown"><h1 className="w-80">Auth</h1></div>
-        <div className="spacee w-10/12 md:w-5/12 ml-5 md:ml-24 text-primary-brown"><h4>Hey! im a 9th grader livin in india i do coding cus it gives me mental peace and i really wanna land internship before college im scared of rotting in college</h4></div>
+        <div className="meow text-clamp ml-5 md:ml-24 mt-20 w-80 text-primary-brownv "><h1 className="w-80">Auth</h1></div>
+        <div className="spacee w-10/12 md:w-5/12 ml-5 md:ml-24 text-primary-brown  text-lg md:text-3xl"><h4>Innovative Frontend Wizard.<br></br>
+Transforming Designs into Reality.</h4></div>
       
 
     
@@ -54,8 +55,9 @@ const Profile = () => {
      <h6 className="brr">123</h6>
     </div>
 
-    <h1 className="br font-semibold text-xl text-primary-brown ml-5  w-44 mt-1 md:hidden inline">Bio:</h1>
+   
     <div className="w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3  ">
+    <h1 className="br font-semibold text-md text-primary-brown ml-1  w-44 md:hidden inline">Bio:</h1>
     <h5 className="md:text-xl text-md">Hey there, I’m Lalit! :] I’m a <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bg-idkfr rounded-md font-medium">2022.</span> Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="🤓" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
 </div>
 

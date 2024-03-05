@@ -25,7 +25,8 @@ const config: Config = {
         clamp: 'clamp(1rem, 6rem, 5rem)',
       },
       spacing: {
-        '128': '18rem',
+        '81': '5rem',
+        '82': '12rem',
       }
 
       

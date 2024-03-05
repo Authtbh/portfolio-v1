@@ -28,15 +28,15 @@ const Profile = () => {
             <button id="btn" className="md:ml-20 ml-5 mt-5 hover:bg-idkfr active:scale-95 transition-all   border-spacing-4 bg-idktbh border-primary-brown  text-primary-brown w-56 h-10 rounded-xl">Discover my work ↓</button>       
     </a>
       
-     <div className="huh relative bottom-0 -mt-64 -right-96 md:block hidden md:left-96 mr-96 md:opacity-100 opacity-100 "><CardContainer className="inter-var">
-      <CardBody className="flex -mr-96">
+     <div className="huh md:block hidden absolute size-24 mr-44 top-28 mt-16  right-0 md:opacity-100 opacity-100 "><CardContainer className="inter-var">
+      <CardBody className="">
       
-        <CardItem translateZ="100" className="relative  top-0 right-0 ">
+        <CardItem translateZ="100" className="">
           <Image
             src="https://i.pinimg.com/564x/dc/90/6f/dc906f75008acf3d758b38c8612935e1.jpg"
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className=" w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
@@ -46,7 +46,7 @@ const Profile = () => {
 
 
    
-    <h2 className="brr md:ml-10 ml-4 mt-5 text-primary-brown">Activity</h2>
+    <h2 className="brr md:ml-10 ml-4 mt-28 text-primary-brown">Activity</h2>
     <img src="https://i.pinimg.com/474x/0c/22/d4/0c22d497d749a184ac9b88e6fc298384.jpg" alt="pfp" className="md:size-44 size-24 md:ml-6 ml-4 rounded-xl mt-5 " />
     <div className=" text-primary-brown w-44 md:ml-56 md:-mt-40 -mt-24 ml-40  ">
      <h4 className="br">@authtbh</h4>
@@ -54,9 +54,9 @@ const Profile = () => {
      <h6 className="brr">123</h6>
     </div>
 
-    <h1 className="br font-semibold text-xl text-primary-brown ml-5  w-44 mt-16 ">Bio:</h1>
-    <div className="w-96 md:absolute right-0 md:-mt-48 mr-16 text-primary-brown mt-12 ml-3  ">
-    <h5 className="">Hey there, I’m Lalit! :] I’m a <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bg-idkfr rounded-md font-medium">2022.</span> Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
+    <h1 className="br font-semibold text-xl text-primary-brown ml-5  w-44 mt-1 md:hidden inline">Bio:</h1>
+    <div className="w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3  ">
+    <h5 className="md:text-xl text-md">Hey there, I’m Lalit! :] I’m a <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bg-idkfr rounded-md font-medium">2022.</span> Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="🤓" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
 </div>
 
 <Tooltip id="my-tooltip"  />

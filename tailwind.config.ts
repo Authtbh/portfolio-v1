@@ -16,10 +16,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        'primary-brown': '#eed1c7',
+        'primary-brown': '#dba895',
         'secondary-brown': '#1e1818',
         'idktbh': '#252222',
         'idkfr': '#2a2727',
+        'idkfrl': '#eed8d1',
       },
       fontSize: {
         clamp: 'clamp(1rem, 6rem, 5rem)',
@@ -27,6 +28,7 @@ const config: Config = {
       spacing: {
         '81': '5rem',
         '82': '12rem',
+        '130': '16rem',
       }
 
       

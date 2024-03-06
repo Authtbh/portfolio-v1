@@ -46,12 +46,28 @@ body {
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Lmao;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight:600;
+  size: 63px;
+  line-height: 97px;
+}
+
+@font-face {
+  font-family: Lamfao;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight:500;
+  size: 36px;
+  line-height: 50px;
+}
+
 .spacee{
   font-family: Space;
 }
 
 .meow{
-  font-family: Spacee;
+  font-family: Lmao;
 }
 
 #my-tooltip {
@@ -87,4 +103,8 @@ body {
 
 .br{
   font-family: Spacee;
+}
+
+.brrr{
+  font-family: Lamfao;
 }

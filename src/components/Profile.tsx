@@ -32,7 +32,7 @@ const Profile = () => {
   return (
     <>
       
-        <div className="meow text-clamp ml-5 md:ml-24 mt-20 w-80 text-primary-brownv "><h1 className="w-80">Auth</h1></div>
+        <div className="meow text-clamp ml-5 md:ml-24 mt-20 w-80 text-primary-brown "><h1 className="w-80">Auth</h1></div>
         <div className="spacee w-10/12 md:w-5/12 ml-5 md:ml-24 text-primary-brown  text-lg md:text-3xl"><h4>Innovative Frontend Wizard.<br></br>
 Transforming Designs into Reality.</h4></div>
       

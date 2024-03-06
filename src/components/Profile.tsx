@@ -50,20 +50,14 @@ Transforming Designs into Reality.</h4></div>
             <button id="btn" className="md:ml-20 ml-5 mt-5 hover:bg-idkfr active:scale-95 transition-all   border-spacing-4 bg-idktbh border-primary-brown  text-primary-brown w-56 h-10 rounded-xl">Discover my work ↓</button>       
     </a>
       
-     <div className="huh md:block hidden absolute size-24 mr-44 top-28 mt-16  right-0 md:opacity-100 opacity-100 "><CardContainer className="inter-var">
-      <CardBody className="">
-      
-        <CardItem translateZ="100" className="">
+     <div className="huh md:block hidden absolute size-24 mr-44 top-28 mt-16  right-0 md:opacity-100 opacity-100 size-64  ">
           <Image
             src="https://i.pinimg.com/564x/dc/90/6f/dc906f75008acf3d758b38c8612935e1.jpg"
             height="1000"
             width="1000"
-            className=" w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </CardItem>
-      </CardBody>
-    </CardContainer></div>
+            className=" w-full object-cover rounded-xl hover:scale-105 transition-all"
+            alt="thumbnail" />
+            </div>
    
 
 

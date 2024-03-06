@@ -1,13 +1,34 @@
 "use client"
 
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '@/app/globals.css';
 import { Tooltip } from 'react-tooltip'
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ThreeD";
 
 const Profile = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+      // Update the current time every second
+      const timerId = setInterval(() => {
+          setCurrentTime(new Date());
+      }, 1000);
+
+      // Cleanup function to clear the interval when the component unmounts
+      return () => clearInterval(timerId);
+  }, []);
+
+  // Function to format the current time as a string in the desired format
+  const formatTime = (date: Date): string => {
+      const day = date.getDate().toString().padStart(2, '0');
+      const month = (date.getMonth() + 1).toString().padStart(2, '0'); // JavaScript months are 0-based.
+      const year = date.getFullYear().toString().substr(-2); // Get last two digits of the year
+      const hours = date.getHours().toString().padStart(2, '0');
+      const minutes = date.getMinutes().toString().padStart(2, '0');
+      const seconds = date.getSeconds().toString().padStart(2, '0');
+      return `${day}/${month}/${year}, ${hours}:${minutes}:${seconds}`;
+  };
   return (
     <>
       
@@ -52,7 +73,7 @@ Transforming Designs into Reality.</h4></div>
     <div className=" text-primary-brown w-44 md:ml-56 md:-mt-40 -mt-24 ml-40  ">
      <h4 className="br">@authtbh</h4>
      <h5 className="brr">idle</h5>
-     <h6 className="brr">123</h6>
+     <h6 className="brr">{formatTime(currentTime)}</h6>
     </div>
 
    

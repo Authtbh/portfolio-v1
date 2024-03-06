@@ -8,9 +8,10 @@ import Image from "next/image";
 const Profile = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [discordStatus, setDiscordStatus] = useState(null);
+  const [birthdate, setBirthdate] = useState(new Date('August 22, 2008 20:00:00'));
+  const [ageInSeconds, setAgeInSeconds] = useState(0);
 
   useEffect(() => {
-    // Update the current time every second
     const timerId = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
@@ -43,6 +44,26 @@ const Profile = () => {
       clearInterval(intervalId);
     };
   }, []);
+
+  useEffect(() => {
+    // Calculate age in seconds
+    const calculateAgeInSeconds = () => {
+      const timeDifference = currentTime.getTime() - birthdate.getTime();
+      const seconds = timeDifference / 1000;
+      setAgeInSeconds(seconds);
+    };
+
+    // Initial calculation
+    calculateAgeInSeconds();
+
+    // Set up interval to recalculate every second
+    const intervalId = setInterval(calculateAgeInSeconds, 1000);
+
+    // Cleanup function
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentTime, birthdate]);
   // Function to format the current time as a string in the desired format
   const formatTime = (date: Date): string => {
     const day = date.getDate().toString().padStart(2, '0');
@@ -88,9 +109,9 @@ Transforming Designs into Reality.</h4></div>
 
 
    
-    <h2 className="brr md:ml-10 ml-4 mt-28 text-primary-brown">Activity</h2>
-    <img src="https://i.pinimg.com/474x/0c/22/d4/0c22d497d749a184ac9b88e6fc298384.jpg" alt="pfp" className="md:size-44 size-24 md:ml-6 ml-4 rounded-xl mt-5 " />
-    <div className=" text-primary-brown w-44 md:ml-56 md:-mt-40 -mt-24 ml-40  ">
+    <h2 className="brr md:ml-32 ml-4 mt-28 text-primary-brown">Activity</h2>
+    <img src="https://i.pinimg.com/474x/0c/22/d4/0c22d497d749a184ac9b88e6fc298384.jpg" alt="pfp" className="md:size-44 size-24 md:ml-28 ml-4 rounded-xl mt-5 " />
+    <div className=" text-primary-brown w-44 md:ml-80 md:-mt-40 -mt-24 ml-40  ">
      <h4 className="br">@authtbh</h4>
      <h5 className="brr">{discordStatus ? discordStatus : 'Fetching'}</h5>
      <h6 className="brr">{formatTime(currentTime)}</h6>
@@ -99,7 +120,9 @@ Transforming Designs into Reality.</h4></div>
    
     <div className="w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3  ">
     <h1 className="br font-semibold text-md text-primary-brown ml-1  w-44 md:hidden inline">Bio:</h1>
-    <h5 className="md:text-xl text-md">Hey there, I’m Lalit! :] I’m a <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="authtbh" data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bg-idkfr rounded-md font-medium">2022.</span> Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="🤓" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
+    <h5 className="md:text-xl text-md">Hey there, I’m Lalit! :] I’m a <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content={`${Math.floor(ageInSeconds)}.${(ageInSeconds % 1)
+        .toFixed(2)
+        .substring(2)}`} data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bg-idkfr rounded-md font-medium">2022.</span> Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="🤓" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
 </div>
 
 <Tooltip id="my-tooltip"  />

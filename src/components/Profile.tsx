@@ -102,7 +102,7 @@ Transforming Designs into Reality.</h4></div>
             src="https://i.pinimg.com/564x/dc/90/6f/dc906f75008acf3d758b38c8612935e1.jpg"
             height="1000"
             width="1000"
-            className=" w-full object-cover rounded-xl hover:scale-105 transition-all"
+            className="Usr w-full object-cover rounded-xl hover:scale-105 transition-all"
             alt="thumbnail" />
             </div>
    
@@ -112,7 +112,7 @@ Transforming Designs into Reality.</h4></div>
     <h2 className="brrr md:ml-48 ml-4 mt-28 text-primary-brown">Activity<span className="text-idkfrl">:discord</span></h2>
     <img src="https://i.pinimg.com/474x/0c/22/d4/0c22d497d749a184ac9b88e6fc298384.jpg" alt="pfp" className="md:size-44 size-24 md:ml-44 ml-4 rounded-xl mt-5 " />
     <div className=" text-primary-brown w-44 md:ml-96 md:-mt-40 -mt-24 ml-40  ">
-     <h4 className="br">@authtbh</h4>
+     <h4 className="User">@authtbh</h4>
      <h5 className="brr">{discordStatus ? discordStatus : 'Fetching'}</h5>
      <h6 className="brr">{formatTime(currentTime)}</h6>
     </div>
@@ -120,9 +120,9 @@ Transforming Designs into Reality.</h4></div>
    
     <div className="w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3  ">
     <h1 className="brrr text-md text-primary-brown ml-1  w-44 md:hidden inline">Bio<span className="text-idkfrl">:myself</span></h1>
-    <h5 className="md:text-xl md:-mt-10 md:-ml-24 mt-4 text-md">Hey there, I’m Lalit! :] I’m a <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content={`${Math.floor(ageInSeconds)}.${(ageInSeconds % 1)
+    <h5 className="brrrr  md:-mt-10 md:-ml-24 mt-4 text-md">Hey there, I’m Lalit! :] I’m a <span className="bio_span bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content={`${Math.floor(ageInSeconds)}.${(ageInSeconds % 1)
         .toFixed(2)
-        .substring(2)}`} data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bg-idkfr rounded-md font-medium">2022.</span> Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="🤓" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
+        .substring(2)}`} data-tooltip-place="top">15</a></span> year old frontend developer and freelancer based in India. I’ve taken coding seriously since <span className="bio_span bg-idkfr rounded-md font-medium -z-10">2021</span>, and have been freelancing since <span className="bio_span bg-idkfr rounded-md font-medium">2022</span>. Recently, however, I’ve grown a knack for giving back to community. I like contributing to <span className="bio_span bg-idkfr rounded-md font-medium"><a data-tooltip-id="my-tooltip" data-tooltip-content="🤓" data-tooltip-place="top">open source</a></span> as a web developer, which is probably the reason why you’ve ended up here. Currently struggling with blockchain and rust.</h5>
 </div>
 
 <Tooltip id="my-tooltip"  />

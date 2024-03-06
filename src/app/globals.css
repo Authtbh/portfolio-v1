@@ -55,6 +55,28 @@ body {
 }
 
 @font-face {
+  font-family: Nuh;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight:300;
+  size: 18px;
+  line-height: 28px;
+}
+
+@font-face {
+  font-family: Nuhuh;
+  src: url(../fonts/JetBrainsMono[wght].ttf);
+  font-weight:300;
+  size: 18px;
+  line-height: 28px;
+}
+@font-face {
+  font-family: NuhUh;
+  src: url(../fonts/JetBrainsMono[wght].ttf);
+  font-weight:400;
+  size: 16px;
+  line-height: 22px;
+}
+@font-face {
   font-family: Lamfao;
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
   font-weight:500;
@@ -107,4 +129,21 @@ body {
 
 .brrr{
   font-family: Lamfao;
+}
+
+.brrrr{
+  font-family: Nuh;
+  color: #bda3a3;
+}
+
+.bio_span{
+  font-family: Nuhuh;
+}
+
+.User{
+  font-family: NuhUh;
+}
+
+.Usr{
+  width: clamp(100px, 50vw, 500px);
 }

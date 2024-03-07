@@ -21,15 +21,16 @@ const Works = () => {
               alt={`Image ${index + 1}`}
               className="w-full h-auto rounded-lg object-cover hover:-mt-1 transition-all"
             />
-            <Tooltip
-              id={`tooltip-${index}`}
-              place="top"
-              effect="solid"
-              delayShow={200}
-              delayHide={0}
-              border={true}
-              style={{ zIndex: 1 }} // Adjust the zIndex value as needed
-            />
+           <Tooltip
+  id={`tooltip-${index}`}
+  place="top"
+  effect="solid"
+  delayShow={200}
+  delayHide={0}
+  // border={true} // Remove this line or provide a valid value like "1px solid #000"
+  style={{ zIndex: 1 }}
+/>
+
           </div>
         ))}
       </div>

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import "react-tooltip/dist/react-tooltip.css";
 import Works from "@/components/Works";
 import Code from "@/components/Code";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <Works />
       <Code />
+      <Footer />
     </>
   );
 }

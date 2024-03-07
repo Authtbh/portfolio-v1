@@ -35,7 +35,7 @@ const Code = () => {
           />
         </div>
 
-        <div className="hover:scale-95 mt-4 transition-all">
+        <div className="hover:scale-95 mt-3 md:mt-8 transition-all">
           <CustomCard
             user="authtbh"
             name="Discord Api"

@@ -5,15 +5,15 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 23, 18, 18;  /* Updated color: #1e1a1a */
-  --background-end-rgb: 23, 18, 18;  /* Updated color: #1e1a1a */
+  --background-start-rgb: 23, 18, 18; /* Updated color: #1e1a1a */
+  --background-end-rgb: 23, 18, 18; /* Updated color: #1e1a1a */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 23, 18, 18; 
-    --background-end-rgb: 23, 18, 18; 
+    --background-start-rgb: 23, 18, 18;
+    --background-end-rgb: 23, 18, 18;
   }
 }
 
@@ -26,7 +26,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -34,7 +34,6 @@ body {
     text-wrap: balance;
   }
 }
-
 
 @font-face {
   font-family: Space;
@@ -49,7 +48,7 @@ body {
 @font-face {
   font-family: Lmao;
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
-  font-weight:600;
+  font-weight: 600;
   size: 63px;
   line-height: 97px;
 }
@@ -57,7 +56,7 @@ body {
 @font-face {
   font-family: Spaces;
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
-  font-weight:500;
+  font-weight: 500;
   size: 19px;
   line-height: 27px;
 }
@@ -65,7 +64,7 @@ body {
 @font-face {
   font-family: Nuh;
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
-  font-weight:300;
+  font-weight: 300;
   size: 18px;
   line-height: 28px;
 }
@@ -73,7 +72,7 @@ body {
 @font-face {
   font-family: Nuhuh;
   src: url(../fonts/JetBrainsMono[wght].ttf);
-  font-weight:300;
+  font-weight: 300;
   size: 18px;
   line-height: 28px;
 }
@@ -81,32 +80,31 @@ body {
 @font-face {
   font-family: Jet;
   src: url(../fonts/JetBrainsMono[wght].ttf);
-  font-weight:300;
+  font-weight: 300;
   size: 14px;
   line-height: 20px;
 }
 
-
 @font-face {
   font-family: NuhUh;
   src: url(../fonts/JetBrainsMono[wght].ttf);
-  font-weight:400;
+  font-weight: 400;
   size: 16px;
   line-height: 22px;
 }
 @font-face {
   font-family: Lamfao;
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
-  font-weight:500;
+  font-weight: 500;
   size: 36px;
   line-height: 50px;
 }
 
-.spacee{
+.spacee {
   font-family: Space;
 }
 
-.meow{
+.meow {
   font-family: Lmao;
 }
 
@@ -119,7 +117,7 @@ body {
   transition: all;
 }
 
-.huh {  
+.huh {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -127,50 +125,94 @@ body {
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }    
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
-#btn{
+#btn {
   font-family: space;
 }
 
-
-.brr{
+.brr {
   font-family: space;
 }
 
-.br{
+.br {
   font-family: Spacee;
 }
 
-.brrr{
+.brrr {
   font-family: Lamfao;
 }
 
-.brrrr{
+.brrrr {
   font-family: Nuh;
   color: #bda3a3;
 }
 
-.bio_span{
+.bio_span {
   font-family: Nuhuh;
 }
 
-.User{
+.User {
   font-family: NuhUh;
 }
 
-.Usr{
+.Usr {
   width: clamp(100px, 50vw, 500px);
 }
 
-
-.card-head{
-font-family: Spaces;
+/* Apply global styles to fonts */
+.card-head {
+  font-family: "Spaces", sans-serif;
 }
 
-.card-dis{
-  font-family: Jet;
+.card-dis {
+  font-family: "Jet", sans-serif;
+  font-size: smaller;
 }
+
+.circle {
+  background-color: rgb(48, 100, 255);
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 11px;
+  display: inline-block; /* Ensures inline behavior */
+}
+
+.group {
+  border-radius: 7px;
+  position: relative;
+  border: 2px solid #bda3a3;
+  transition: margin-top 0.3s ease-in-out;
+  border-style: solid;
+  border-color: green;
+}
+
+.custom-card {
+  position: relative;
+  border: 2px solid var(--text-idkfrl); /* Add border with text-idkfrl color */
+}
+
+.card-dis,
+.card-head,
+.circle {
+  color: var(
+    --text-idkfrl
+  ); /* Apply text-idkfrl color to h6 elements and circle */
+}
+
+
+.cards:hover{
+  background-color: aliceblue;
+}
+

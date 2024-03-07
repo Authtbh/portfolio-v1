@@ -1,9 +1,12 @@
-import React from 'react';
-import { Tooltip } from 'react-tooltip';
+import React from "react";
+import { Tooltip } from "react-tooltip";
 
 const Works = () => {
-  const imageNames = Array.from({ length: 9 }, (_, index) => `img${index + 1}.jpg`);
-  const imagePath = '/imgs/'; // Adjust the path based on your project structure
+  const imageNames = Array.from(
+    { length: 9 },
+    (_, index) => `img${index + 1}.jpg`,
+  );
+  const imagePath = "/imgs/"; // Adjust the path based on your project structure
 
   return (
     <div>
@@ -25,6 +28,7 @@ const Works = () => {
               delayShow={200}
               delayHide={0}
               border={true}
+              style={{ zIndex: 1 }} // Adjust the zIndex value as needed
             />
           </div>
         ))}

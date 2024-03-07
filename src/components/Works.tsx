@@ -24,7 +24,6 @@ const Works = () => {
            <Tooltip
   id={`tooltip-${index}`}
   place="top"
-  effect="solid"
   delayShow={200}
   delayHide={0}
   // border={true} // Remove this line or provide a valid value like "1px solid #000"

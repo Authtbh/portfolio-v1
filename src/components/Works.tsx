@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip } from 'react-tooltip'
+import { Tooltip } from 'react-tooltip';
 
 const Works = () => {
   const imageNames = Array.from({ length: 9 }, (_, index) => `img${index + 1}.jpg`);
@@ -7,18 +7,26 @@ const Works = () => {
 
   return (
     <div>
-      <a data-tooltip-id="my-tooltip" data-tooltip-content="My blogs" data-tooltip-place="top" className=""><h2 className="brrr justify-center md:-mt-28 mt-10 flex items-center text-primary-brown">
+      <h2 className="brrr justify-center md:-mt-28 mt-10 flex items-center text-primary-brown">
         Work<span className="text-idkfrl">:Blogs</span>
-      </h2></a>
-      <Tooltip id="my-tooltip"  />
+      </h2>
       <div className="grid grid-cols-3 md:gap-11 gap-4 p-4 max-w-screen-md mx-auto">
         {imageNames.map((imageName, index) => (
-          <img
-          key={index}
-          src={`${imagePath}${imageName}`}
-          alt={`Image ${index + 1}`}
-          className="w-full h-auto rounded-lg object-cover hover:scale-105 transition-all"
-        />
+          <div key={index} className="relative">
+            <img
+              src={`${imagePath}${imageName}`}
+              alt={`Image ${index + 1}`}
+              className="w-full h-auto rounded-lg object-cover hover:-mt-1 transition-all"
+            />
+            <Tooltip
+              id={`tooltip-${index}`}
+              place="top"
+              effect="solid"
+              delayShow={200}
+              delayHide={0}
+              border={true}
+            />
+          </div>
         ))}
       </div>
     </div>

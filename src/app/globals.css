@@ -55,6 +55,14 @@ body {
 }
 
 @font-face {
+  font-family: Spaces;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight:500;
+  size: 19px;
+  line-height: 27px;
+}
+
+@font-face {
   font-family: Nuh;
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
   font-weight:300;
@@ -69,6 +77,16 @@ body {
   size: 18px;
   line-height: 28px;
 }
+
+@font-face {
+  font-family: Jet;
+  src: url(../fonts/JetBrainsMono[wght].ttf);
+  font-weight:300;
+  size: 14px;
+  line-height: 20px;
+}
+
+
 @font-face {
   font-family: NuhUh;
   src: url(../fonts/JetBrainsMono[wght].ttf);
@@ -146,4 +164,13 @@ body {
 
 .Usr{
   width: clamp(100px, 50vw, 500px);
+}
+
+
+.card-head{
+font-family: Spaces;
+}
+
+.card-dis{
+  font-family: Jet;
 }

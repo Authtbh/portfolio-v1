@@ -11,12 +11,12 @@ const Code = () => {
         data-tooltip-place="top"
         className=""
       >
-        <h2 className="brrr  md:-mt-38 mt-10 flex items-center justify-center text-primary-brown">
+        <h2 className="brrr  md:mt-56 mt-10 flex items-center justify-center text-primary-brown ">
           Code<span className="text-idkfrl">:work</span>
         </h2>
       </a>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-10 mb-10">
+      <div className="flex flex-wrap justify-center gap-4 mt-10 mb-32">
         <div className=" hover:scale-95 mt-8 mb-3 transition-all">
           <CustomCard
             user="authtbh"

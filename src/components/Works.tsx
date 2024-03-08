@@ -10,7 +10,7 @@ const Works = () => {
 
   return (
     <div>
-      <h2 name="works"className="brrr justify-center md:-mt-28  flex items-center text-primary-brown">
+      <h2 className="brrr justify-center md:-mt-28  flex items-center text-primary-brown">
         Work<span className="text-idkfrl">:Blogs</span>
       </h2>
       <div className="grid grid-cols-3 md:gap-11 gap-4 p-4 max-w-screen-md mx-auto -z-50">

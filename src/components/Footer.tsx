@@ -5,7 +5,7 @@ import { Tooltip } from "react-tooltip";
 const Footer = () => {
   return (
   <>
-<hr class="custom-hr" />
+<hr className="custom-hr" />
 
       <div className="flex  md:ml-5  gap-1 transition-all mt-8 mb-3  ml-0 justify-center md:inline-flex  ">
         <div className="hover:bg-idktbh rounded-xl transition-all">

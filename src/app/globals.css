@@ -235,3 +235,19 @@ body {
     width: 100px;
   }
 }
+
+/* Increase z-index of the Navbar and its content */
+.sticky {/* z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) */
+  z-index: 1000; /* Set a high value to ensure it's above other content */
+}
+
+/* If you specifically need to increase z-index for child elements */
+.sticky header,
+.sticky header .flex {
+  z-index: 1001; /* Incrementing z-index for nested elements, though it's not always necessary */
+}
+
+/* Further specificity if required for links or other elements */
+.sticky header .flex a {
+  z-index: 1002;
+}

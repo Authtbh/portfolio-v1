@@ -265,7 +265,7 @@ const Profile = () => {
         />
       </div>
 
-      <h2 className="brrr md:ml-48 ml-4 mt-28 text-primary-brown">
+      <h2 className="brrr md:ml-48 ml-4 mt-28 text-primary-brown" id="about">
         Activity<span className="text-idkfrl">:discord</span>
       </h2>
       <img

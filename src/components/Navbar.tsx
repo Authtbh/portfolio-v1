@@ -17,11 +17,13 @@ export default function Navbar() {
   };
 
 
-  const ScrollToWork = (e) => {
-    scroller.scrollTo('works', {
+  const About = (e) => {
+    scroller.scrollTo('about', {
       duration: 400,
       delay: 10,
       smooth: true,
+      
+      offset: -180,
       // If you're using a specific scrollable container:
       // containerId: 'ContainerElementID',
     });
@@ -42,10 +44,10 @@ export default function Navbar() {
           <a href="" onClick={(e) => scrollToTop(e)}>/</a>
           </div>
           <div className="flex-col-1">
-          <a href="" onClick={scrollToBottom}>about</a>
+          <a href="" onClick={(e) => About(e)}>about</a>
           </div>
           <div  className="flex-col-1">
-            <a  href="" onClick={(e) => ScrollToWork(e)}>work</a>
+            <a  href=""  onClick={scrollToBottom} >work</a>
           </div>
         </div>
       </header>

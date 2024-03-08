@@ -16,7 +16,7 @@ const Code = () => {
         </h2>
       </a>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-10">
+      <div className="flex flex-wrap justify-center gap-4 mt-10 mb-10">
         <div className=" hover:scale-95 mt-8 mb-3 transition-all">
           <CustomCard
             user="authtbh"

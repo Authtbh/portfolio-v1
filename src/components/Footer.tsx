@@ -5,16 +5,7 @@ import { Tooltip } from "react-tooltip";
 const Footer = () => {
   return (
   <>
-<hr style={{
-    marginTop: '120px',
-  background: '#332f2f',
-  color: '#332f2f',
-  borderColor: '#332f2f',
-  height: '2px',
-  width: '755px',
-  margin: '0 auto',
-  marginBottom: '31px', // Added inline style to center
-}} />
+<hr class="custom-hr" />
 
       <div className="flex  md:ml-5  gap-1 transition-all mt-8 mb-3  ml-0 justify-center md:inline-flex  ">
         <div className="hover:bg-idktbh rounded-xl transition-all">
@@ -164,7 +155,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <h5 className="brrrr text-sm relative left-[70rem] mb-10 -mt-12 ">Made with pain   <span className=" text-sm bio_span bg-idkfr rounded-md font-medium">
+      <h5 className= "brrrr ml-16 text-sm relative justify-center md:justify-end flex md:inline   float-none md:float-end mb-10 -mt-1 md:mt-10 mr-20  ">Made with pain ‎   <span className=" text-sm bio_span bg-idkfr rounded-md font-medium">
             <a
               data-tooltip-id="my-tooltip"
               data-tooltip-content="i wanna kms"

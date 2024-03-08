@@ -280,11 +280,11 @@ const Profile = () => {
         <h6 className="brr">{formatTime(currentTime)}</h6>
       </div>
 
-      <div className="w-full md:w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3">
-        <h1 className="brrr text-md text-primary-brown ml-1 w-44 md:hidden inline">
+      <div className="w-auto  md:w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3">
+        <h1 className="brrr text-md text-primary-brown ml-1 w-44 md:hidden inline ">
           Bio<span className="text-idkfrl">:myself</span>
         </h1>
-        <h5 className="brrrr w-full md:w-96 mt-4 text-sm ">
+        <h5 className="brrrr w-full md:w-96 mt-4 text-sm  ">
           Hey there, I’m Lalit! :] I’m a ‎
           <span className="bio_span bg-idkfr rounded-md font-medium">
             <a

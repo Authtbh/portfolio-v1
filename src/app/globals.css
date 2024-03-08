@@ -216,3 +216,22 @@ body {
   background-color: aliceblue;
 }
 
+/* styles.css */
+
+.custom-hr {
+  margin-top: 120px;
+  background: #332f2f;
+  color: #332f2f;
+  border-color: #332f2f;
+  height: 2px;
+  width: 755px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+/* Responsive design: Adjust width for small screens */
+@media (max-width: 600px) {
+  .custom-hr {
+    width: 100px;
+  }
+}

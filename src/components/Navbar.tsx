@@ -39,7 +39,7 @@ export default function Navbar() {
       <header>
         <div className="flex top-0 z-auto justify-center items-center gap-24 md:mt-5  max-w-screen-lg mx-auto text-primary-brown bg-secondary-brown md:w-96 py-5 rounded-xl opacity-90 w-full mt-0">
           <div className="flex-col-1 shrink-0">
-          <a href="" duration={400} smooth={true} onClick={(e) => scrollToTop(e)}>/</a>
+          <a href="" onClick={(e) => scrollToTop(e)}>/</a>
           </div>
           <div className="flex-col-1">
           <a href="" onClick={scrollToBottom}>about</a>

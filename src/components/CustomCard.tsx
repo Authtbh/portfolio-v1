@@ -3,7 +3,7 @@ import "@/app/globals.css"; // Import the CSS file
 
 const CustomCard = (props) => {
   return (
-    <div className="group custom-card bg-idklol w-96 h-32 rounded-xl transition-all border border-white">
+    <div className="group custom-card bg-idklol opacity-75 w-96 h-32 rounded-xl transition-all border border-white">
       <h6 className="card-dis text-idkfrl ml-7 -mt-3">{props.user}</h6>
       <img
         className="size-3 rounded-full ml-3 -mt-4"

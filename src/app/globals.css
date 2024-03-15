@@ -200,7 +200,7 @@ body {
 
 .custom-card {
   position: relative;
-  border: 2px solid var(--text-idkfrl); /* Add border with text-idkfrl color */
+  border: 2px solid var(--text-idkfrl); 
 }
 
 .card-dis,
@@ -239,12 +239,14 @@ body {
 /* Increase z-index of the Navbar and its content */
 .sticky {/* z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) */
   z-index: 1000; /* Set a high value to ensure it's above other content */
+  
 }
 
 /* If you specifically need to increase z-index for child elements */
 .sticky header,
 .sticky header .flex {
   z-index: 1001; /* Incrementing z-index for nested elements, though it's not always necessary */
+  
 }
 
 /* Further specificity if required for links or other elements */
@@ -260,4 +262,14 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #dba895;
   -webkit-user-select: none;
+}
+
+
+.navbar {
+  transition:  all;
+  backdrop-filter: blur(10px);
+}
+
+.navbar.sticky { /* Ensure border color changes when scrolling */
+  transition-duration: 0s; /* Set transition duration to 0s for instant transition */
 }

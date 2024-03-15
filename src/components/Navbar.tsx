@@ -1,56 +1,63 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
-import AnimatedCursor from "react-animated-cursor";
-import { Link, Button, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import { Element, scroller } from 'react-scroll';
+import { animateScroll as scroll, scroller } from 'react-scroll';
+
 export default function Navbar() {
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [navbarWidth, setNavbarWidth] = useState(64); // Initial width
+
   const options = {
-    // Your options here, for example:
     duration: 500,
     smooth: true,
   };
+
   const scrollToTop = (e) => {
-     // Corrected typo here
     scroll.scrollToTop(options);
     e.preventDefault();
   };
-
 
   const About = (e) => {
     scroller.scrollTo('about', {
       duration: 400,
       delay: 10,
       smooth: true,
-      
       offset: -180,
-      // If you're using a specific scrollable container:
-      // containerId: 'ContainerElementID',
     });
     e.preventDefault();
   };
-
 
   const scrollToBottom = (e) => {
     e.preventDefault(); // Prevent default link behavior
     scroll.scrollToBottom(options); // Use predefined options
   };
-  
-  return (
-    <div className="sticky md:top-10 top-0">
-      <header>
-        <div className="flex top-0 z-auto justify-center items-center gap-24 md:mt-5  max-w-screen-lg mx-auto text-primary-brown bg-secondary-brown md:w-96 py-5 rounded-xl opacity-90 w-full mt-0">
-          <div className="flex-col-1 shrink-0">
-          <a href="" onClick={(e) => scrollToTop(e)}>/</a>
-          </div>
-          <div className="flex-col-1">
-          <a href="" onClick={(e) => About(e)}>about</a>
-          </div>
-          <div  className="flex-col-1">
-            <a  href=""  onClick={scrollToBottom} >work</a>
-          </div>
-        </div>
-      </header>
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Update navbar width based on scrolling state
+    setNavbarWidth(isScrolling ? 96 : 64);
+  }, [isScrolling]);
+
+  return (  
+    <div className={`navbar ${isScrolling ? 'sticky' : ''} top-0 md:top-[10px] flex flex-row md:mt-5  mt-0 z-auto justify-center items-center md:w-96 w-full   gap-24  mx-auto text-primary-brown bg-${isScrolling ? 'secondary-brown' : ''}  py-5 px-16 h-16 w-  rounded-xl opacity-90 transition-all duration-300 ease-in-out border-spacing-1 duration-300 border-[#867373] ${isScrolling ? 'backdrop-blur-lg border-[#867373] border-spacing-2 border-b top-2 transition-all duration-1000' : ''}`}>
+      <div className="flex-col-1 shrink-0">
+        <a href="/" onClick={(e) => scrollToTop(e)}>/</a>
+      </div>
+      <div className="flex-col-1">
+        <a href="" onClick={(e) => About(e)}>about</a>
+      </div>
+      <div className="flex-col-1">
+        <a href="" onClick={scrollToBottom}>work</a>
+      </div>
     </div>
   );
 }

@@ -251,3 +251,12 @@ body {
 .sticky header .flex a {
   z-index: 1002;
 }
+
+.decor {
+  font-size: 10rem;
+  font-family: Spacee;
+  z-index: -100;
+  -webkit-text-fill-color: #171212;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #dba895;
+}

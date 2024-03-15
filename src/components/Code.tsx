@@ -21,7 +21,7 @@ const Code = () => {
           <CustomCard
             user="authtbh"
             name="Discord Api"
-            dis="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            dis="Discor bot that fetches user info"
             lang="typescript"
           />
         </div>
@@ -29,18 +29,18 @@ const Code = () => {
         <div className=" hover:scale-95  -mt- transition-all">
           <CustomCard
             user="authtbh"
-            name="Discord Api"
-            dis="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            lang="typescript"
+            name=" Instagram clone"
+            dis="Instagram clone made with nextjs and appwrite"
+            lang="Nextjs"
           />
         </div>
 
         <div className="hover:scale-95 mt-3 md:mt-8 transition-all">
           <CustomCard
             user="authtbh"
-            name="Discord Api"
-            dis="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            lang="typescript"
+            name="Mew"
+            dis="Cli helper made with rust"
+            lang="Rust"
           />
         </div>
       </div>

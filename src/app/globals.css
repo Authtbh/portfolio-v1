@@ -259,4 +259,5 @@ body {
   -webkit-text-fill-color: #171212;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #dba895;
+  -webkit-user-select: none;
 }

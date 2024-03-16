@@ -18,10 +18,7 @@ const Profile = () => {
 
   const scrollToBottom = (e) => {
     e.preventDefault(); // Prevent default link behavior
-    scroll.scrollToBottom({
-      duration: 500,
-      smooth: true,
-    }); // Use predefined options
+    scroll.scrollTo(1883);  // Use predefined options
   };
 
   useEffect(() => {
@@ -97,7 +94,7 @@ const Profile = () => {
   };
   return (
     <>
-      <div className="meow text-clamp ml-5 md:ml-36 md:-mt-28 mt-20Dps w-80 text-idkfrl xl:ml-48 ">
+      <div className="meow text-clamp  ml-5 md:ml-36 md:-mt-28 mt-20Dps w-80 text-idkfrl xl:ml-48 ">
         <h1 className="w-80">Auth</h1>
       </div>
       <div className="spacee w-10/12 md:w-5/12 ml-5 md:ml-36 text-primary-brown  text-lg md:text-3xl">

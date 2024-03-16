@@ -1,9 +1,9 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import "@/app/globals.css";
 import { Tooltip } from "react-tooltip";
 import Image from "next/image";
+import { animateScroll as scroll, scroller } from 'react-scroll';
 
 const Profile = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -15,6 +15,14 @@ const Profile = () => {
   const [userId, setUserId] = useState("");
   const [avatarId, setAvatarId] = useState("");
   const [username, setUsername] = useState("");
+
+  const scrollToBottom = (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    scroll.scrollToBottom({
+      duration: 500,
+      smooth: true,
+    }); // Use predefined options
+  };
 
   useEffect(() => {
     const timerId = setInterval(() => {
@@ -74,8 +82,9 @@ const Profile = () => {
       clearInterval(intervalId);
     };
   }, [currentTime, birthdate]);
+
   // Function to format the current time as a string in the desired format
-  const formatTime = (date: Date): string => {
+  const formatTime = (date) => {
     const day = date.getDate().toString().padStart(2, "0");
     const month = (date.getMonth() + 1).toString().padStart(2, "0"); // JavaScript months are 0-based.
     const year = date.getFullYear().toString().substr(-2); // Get the last two digits of the year
@@ -248,6 +257,7 @@ const Profile = () => {
       </div>
       <a href="#">
         <button
+        onClick={scrollToBottom}
           id="btn"
           className="md:ml-36 ml-5 mt-5 hover:bg-idkfr active:scale-95 transition-all   border-spacing-4 bg-idktbh border-primary-brown  text-primary-brown w-56 h-10 rounded-xl"
         >

@@ -265,10 +265,7 @@ body {
 }
 
 
-.navbar {
-  transition:  all;
-  backdrop-filter: blur(10px);
-}
+
 
 .navbar.sticky { /* Ensure border color changes when scrolling */
   transition-duration: 0s; /* Set transition duration to 0s for instant transition */

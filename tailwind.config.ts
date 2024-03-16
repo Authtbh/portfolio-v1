@@ -22,6 +22,7 @@ const config: Config = {
         idkfr: "#2a2727",
         idkfrl: "#eed8d1",
         idklol: "#211e1e",
+        meow: "#332626",
       },
       fontSize: {
         clamp: "clamp(1rem, 6rem, 5rem)",
